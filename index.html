@@ -12,25 +12,57 @@
 
     <h3>Challenge 1</h3>
     <p>
-      Create a search input with a label "What's on your mind?"
+      Create a search input with a label "What's on your mind?
+      <div>
+        <label for="idea">What's on your mind?</label>
+        <input type="text" id="idea">
+      </div>     
     </p>
 
     <h3>Challenge 2</h3>
     <p>
       Create a form with a date input asking "What is your birth date?", a
       submit button "Submit" and the form should send the date to /submit
+
+      <div>
+        <label for="idea">What's your birth date?</label>
+        <input type="date" id="birthday" required autofocus>
+        <input type="submit" value="Send"/> 
+      </div>
     </p>
 
     <h3>Challenge 3</h3>
     <p>
       Create radio inputs asking "What is your favorite primary color?" with
       blue, yellow and red as options
+
+        <form action="/submit">
+            <div>
+                <label for="idea">What's your favorite primary color?</label>
+                <input type="radio" name="color" id="blue"><label for="blue">Blue</label>
+                <input type="radio" name="color" id="red"><label for="blue">Red</label>
+                <input type="radio" name="color" id="yellow"><label for="blue">Yellow</label>
+                <input type="submit" value="Send"/>
+            </div>
+        </form>
     </p>
 
     <h3>Challenge 4</h3>
     <p>
       Create checkbox inputs asking "How do you like to travel?" with plane,
       bus, train, car, walking as options
+
+        <form action="/submit">
+            <div>
+                <label for="idea">How do you like to travel?</label>
+                <input type="checkbox" name="travel-car" id="car"><label for="blue">Car</label>
+                <input type="checkbox" name="travel-bus" id="bus"><label for="blue">Bus</label>
+                <input type="checkbox" name="travel-plane" id="plane"><label for="blue">Plane</label>
+                <input type="checkbox" name="travel-train" id="train"><label for="blue">Train</label>
+                <input type="checkbox" name="travel-walk" id="walkx"><label for="blue">Walking</label>
+                <input type="submit" value="Send"/>
+            </div>
+        </form>
     </p>
 
     <script src="src/index.js"></script>
